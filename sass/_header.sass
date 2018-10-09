@@ -1,0 +1,81 @@
+.subheader
+  display: none
+
+.overlay
+  height: 0
+  width: 100%
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  background-color: rgb(255,255,255)
+  background-color: rgba(255,255,255,0.95)
+  overflow-y: hidden
+  transition: 0.5s
+  font-size: 24px
+
+.overlay-content
+  position: relative
+  top: 5%
+  width: 100%
+  text-align: center
+  margin-top: 30px
+
+.overlay a
+  padding: 8px
+  text-decoration: none
+  color: $tekst
+  display: block
+  transition: 0.3s
+
+.overlay a:hover, .overlay a:focus
+  color: #f1f1f1
+
+.overlay .closebtn
+  width: 100%
+  text-align: center
+  font-size: 30px
+  margin-top: 40px
+
+.logo
+  width: 50%
+  float: left
+  height: 100px
+  padding: 20px 5% 0 5%
+  img
+    height: 80px
+
+.header
+  width: 100%
+  display: block
+  height: 100px
+  @extend %section-bottom-margin
+
+.menu
+  width: 50%
+  float: right
+  position: relative
+  height: 100px
+  .nav-icon
+    width: 40px
+    height: 36px
+    position: absolute
+    top: 40px
+    right: 10%
+    padding: 4px 0
+    cursor: pointer
+    div
+      height: 4px
+      background-color: $donkergrijs
+      border-radius: 25px
+      transition: 0.15s
+    .line-one
+      width: 40px
+      margin-bottom: 8px
+    .line-two
+      width: 30px
+      margin-bottom: 8px
+    .line-three
+      width: 34px
+  .nav-icon:hover div
+    width: 100%

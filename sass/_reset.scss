@@ -1,4 +1,5 @@
-html {line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */}
+*,*::before,*::after {box-sizing: inherit;}
+html {line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ box-sizing: border-box; font-size: 100%;}
 body {margin: 0;}
 hr {box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */}
 pre {font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */}

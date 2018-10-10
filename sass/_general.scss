@@ -41,7 +41,7 @@ progress {display: inline-block; vertical-align: baseline;}
 textarea {overflow: auto; }
 [hidden] {display: none; }
 body {padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: $bodytekst;
   font-weight: normal;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -105,7 +105,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: $bodytekst;
   font-style: normal;
   font-weight: normal;
   color: inherit;

@@ -6,8 +6,24 @@ $mediumgrijs: #BDBDBD
 $donkergrijs: #455A64
 $wit: #FFFFFF
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600')
+$bodytekst: 'Open Sans', sans-serif
+
 %mobile-padding
   padding: 0 2%
 
 %section-bottom-margin
   margin-bottom: 30px
+
+%boxshadow
+  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4)
+
+%korte-onderlijn
+  margin-bottom: 15px
+  &:after
+    content: ''
+    display: block
+    width: 40px
+    height: 2px
+    background-color: $paars
+    margin-top: 9px

@@ -7,8 +7,37 @@
   @extend %section-bottom-margin
   display: flex
   flex-direction: column
+  h1
+    @extend %korte-onderlijn
+  h4
+    clear: both
+    margin: 18px 0 5px 0
+  div
+    @extend %section-bottom-margin
 
   .jeugdploegen
     background-color: $wit
-    border: 1px solid $mediumgrijs
-    padding: 15px
+    padding: 10px
+    @extend %boxshadow
+    ul
+      list-style-type: none
+      overflow: hidden
+      margin: 0
+      li
+        float: left
+        margin: 0 8px 0 0
+        a
+          display: block
+          background-color: $lichtgrijs
+          color: $tekst
+          border-radius: 3px
+          padding: 3px 6px 3px 6px
+          margin-bottom: 9px
+          transition: all .3s ease
+          &:hover
+            background-color: $tekst
+            color: $lichtgrijs
+  .sportief-content
+    padding: 10px
+    background-color: $wit
+    @extend %boxshadow

@@ -1,9 +1,24 @@
 @charset "UTF-8";
-.section-news, .section-sportief {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+.section-news, .section-sportief, .section-actueel, .section-svw-in-beeld {
   padding: 0 2%; }
 
-.header, .section-news, .section-sportief {
+.header, .section-news, .section-sportief, .section-sportief div, .section-actueel, .section-actueel div, .section-svw-in-beeld, .section-svw-in-beeld .reportage {
   margin-bottom: 30px; }
+
+.section-sportief .jeugdploegen, .section-sportief .sportief-content, .section-actueel div {
+  -webkit-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
+
+.section-sportief h1, .section-actueel h1, .section-svw-in-beeld h1 {
+  margin-bottom: 15px; }
+  .section-sportief h1:after, .section-actueel h1:after, .section-svw-in-beeld h1:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #822085;
+    margin-top: 9px; }
 
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
@@ -320,7 +335,7 @@ textarea {
 
 body {
   padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -398,7 +413,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -1170,9 +1185,68 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .section-sportief h4 {
+    clear: both;
+    margin: 18px 0 5px 0; }
   .section-sportief .jeugdploegen {
     background-color: #FFFFFF;
-    border: 1px solid #BDBDBD;
+    padding: 10px; }
+    .section-sportief .jeugdploegen ul {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0; }
+      .section-sportief .jeugdploegen ul li {
+        float: left;
+        margin: 0 8px 0 0; }
+        .section-sportief .jeugdploegen ul li a {
+          display: block;
+          background-color: #F5F5F5;
+          color: #340535;
+          border-radius: 3px;
+          padding: 3px 6px 3px 6px;
+          margin-bottom: 9px;
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease; }
+          .section-sportief .jeugdploegen ul li a:hover {
+            background-color: #340535;
+            color: #F5F5F5; }
+  .section-sportief .sportief-content {
+    padding: 10px;
+    background-color: #FFFFFF; }
+
+.section-actueel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .section-actueel div {
     padding: 15px; }
+
+.section-svw-in-beeld {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .section-svw-in-beeld .reportage {
+    position: relative; }
+    .section-svw-in-beeld .reportage a {
+      color: #340535; }
+    .section-svw-in-beeld .reportage h3 {
+      position: absolute;
+      bottom: 25px;
+      margin-left: 10px; }
+    .section-svw-in-beeld .reportage p {
+      font-size: 80%;
+      position: absolute;
+      margin: 0 0 0 10px;
+      padding: 0;
+      bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

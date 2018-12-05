@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
-.section-news, .section-sportief, .section-actueel, .section-svw-in-beeld {
+.section-news, .section-sportief, .section-actueel, .section-svw-in-beeld, .ploegpagina-container, .overzicht-container, .single-container, .page-container, .footer {
   padding: 0 2%; }
 
-.header, .section-news, .section-sportief, .section-sportief div, .section-actueel, .section-actueel div, .section-svw-in-beeld, .section-svw-in-beeld .reportage {
+.header, .section-news, .section-sportief, .section-sportief div, .section-actueel, .section-actueel div, .section-svw-in-beeld, .section-svw-in-beeld .reportage, .ploegpagina-container, .overzicht-container, .single-container, .page-container {
   margin-bottom: 30px; }
 
 .section-sportief .jeugdploegen, .section-sportief .sportief-content, .section-actueel div {
@@ -1248,5 +1248,20 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
       margin: 0 0 0 10px;
       padding: 0;
       bottom: 10px; }
+
+.ploegpagina-container .ploeg-foto {
+  margin-bottom: 20px; }
+
+.overzicht-container .overzicht-sectie-1, .overzicht-container .overzicht-sectie-2, .overzicht-container .overzicht-sectie-3, .overzicht-container .overzicht-sectie-4 {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.overzicht-container div[class^="sectie-"] {
+  margin-bottom: 20px; }
+
+.footer {
+  background-color: #F5F5F5;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
